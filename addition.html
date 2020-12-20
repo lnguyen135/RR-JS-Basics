@@ -1,0 +1,279 @@
+
+<!doctype html>
+<html>
+<head>
+<h2>Basic Math</h2>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+</script>
+
+<body>
+Enter the First number : <input id="first">
+Enter the Second number: <input id="second">
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
+
+
+<hr>
+
+<script>
+function sub(){
+var d,e,f;
+d=Number(document.getElementById("first1").value);
+e=Number(document.getElementById("second1").value);
+f= d - e;
+document.getElementById("answer1").value= f;
+}
+</script>
+
+<body>
+
+Enter the First number : <input id="first1">
+Enter the Second number : <input id="second1">
+<button onclick="sub()">Subtraction</button>
+<input id="answer1">
+</body>
+<hr>
+
+<script>
+function multiple(){
+var g,h,l;
+g=Number(document.getElementById("first2").value);
+h=Number(document.getElementById("second2").value);
+l= g * h;
+document.getElementById("answer2").value= l;
+}
+</script>
+
+<body>
+
+Enter the First number : <input id="first2">
+Enter the Second number : <input id="second2">
+<button onclick="multiple()">Multiplication</button>
+<input id="answer2">
+</body>
+<hr>
+
+<script>
+function div(){
+var n,m,o;
+n=Number(document.getElementById("first3").value);
+m=Number(document.getElementById("second3").value);
+o= n/m;
+document.getElementById("answer3").value= o;
+}
+</script>
+
+<body>
+
+Enter the First number : <input id="first3">
+Enter the Second number : <input id="second3">
+<button onclick="div()">Division</button>
+<input id="answer3">
+</body>
+<hr>
+<h2>Area</h2>
+<script>
+function sqr(){
+var s,A;
+s=Number(document.getElementById("first4").value);
+
+A= s*s;
+document.getElementById("answer4").value= A;
+}
+</script>
+
+<body>
+
+Enter the radius : <input id="first4">
+
+
+<button onclick="sqr()">Square</button>
+<input id="answer4">
+</body>
+<hr>
+<script>
+function rect(){
+var j,w,r;
+j=Number(document.getElementById("first5").value);
+w=Number(document.getElementById("second5").value);
+
+r=j*w;
+document.getElementById("answer5").value= r;
+}
+</script>
+
+<body>
+
+Enter the length : <input id="first5">
+Enter the width : <input id="second5">
+
+<button onclick="rect()">Rectangle</button>
+<input id="answer5">
+</body>
+<hr>
+<script>
+function par(){
+var t,y,u;
+t=Number(document.getElementById("first6").value);
+y=Number(document.getElementById("second6").value);
+
+u = t*y;
+document.getElementById("answer6").value= u;
+}
+</script>
+
+<body>
+
+Enter the base : <input id="first6">
+Enter the height : <input id="second6">
+
+<button onclick="par()">Parallelogram</button>
+<input id="answer6">
+</body>
+<hr>
+<script>
+function tri(){
+var p,k,z;
+p=Number(document.getElementById("first7").value);
+k=Number(document.getElementById("second7").value);
+
+z = (p*k)/2;
+document.getElementById("answer7").value= z;
+}
+</script>
+
+<body>
+
+Enter the base : <input id="first7">
+Enter the height : <input id="second7">
+
+<button onclick="tri()">Triangle</button>
+<input id="answer7">
+</body>
+<hr>
+<script>
+function cir(){
+var x,v;
+x=Number(document.getElementById("first8").value);
+
+
+v = (x*x)*Math.PI;
+var V = v.toFixed(2);
+  
+document.getElementById("answer8").value= V;
+}
+</script>
+
+<body>
+
+Enter the radius : <input id="first8">
+
+
+<button onclick="cir()">Circle</button>
+<input id="answer8">
+</body>
+<hr>
+
+<hr>
+<script>
+function sph(){
+var R,S;
+R=Number(document.getElementById("first9").value);
+
+
+S = 4*(R*R)*Math.PI;
+
+  var Y = S.toFixed(2);
+document.getElementById("answer9").value= Y;
+}
+</script>
+
+<body>
+
+Enter the radius : <input id="first9">
+
+
+<button onclick="sph()">Sphere</button>
+<input id="answer9">
+</body>
+<hr>
+
+<h2>Surface Area</h2>
+<script>
+function cub(){
+var i,Q;
+i=Number(document.getElementById("first10").value);
+
+
+Q = i*i*i;
+
+  
+document.getElementById("answer10").value= Q;
+}
+</script>
+
+<body>
+
+Enter the side of cube : <input id="first10">
+
+
+<button onclick="cub()"> Cube</button>
+<input id="answer10">
+</body>
+<hr>
+<script>
+function recC(){
+var L,W,H,E;
+L=Number(document.getElementById("first11").value);
+W=Number(document.getElementById("second11").value);
+H=Number(document.getElementById("third11").value);
+
+E = L*W*H;
+
+  
+document.getElementById("answer11").value= E;
+}
+</script>
+
+<body>
+
+Enter the length : <input id="first11">
+Enter the width : <input id="second11">
+Enter the height : <input id="third11">
+
+
+<button onclick="recC()">Rectangular Container</button>
+<input id="answer11">
+</body>
+<hr>
+
+<script>
+function cyl(){
+var P,K,Z;
+P=Number(document.getElementById("first12").value);
+K=Number(document.getElementById("second12").value);
+
+Z = P*(K*K)*Math.PI;
+var F = Z.toFixed(2);
+document.getElementById("answer12").value= F;
+}
+</script>
+
+<body>
+
+Enter the height : <input id="first12">
+Enter the radius : <input id="second12">
+
+<button onclick="cyl()">Cylinder</button>
+<input id="answer12">
+</body>
+<hr>
+</html>
